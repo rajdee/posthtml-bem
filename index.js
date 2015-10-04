@@ -82,7 +82,7 @@ module.exports = function (config) {
         };
     };
 
-    return function (tree) {
+    return function posthtmlBem(tree) {
         tree.match({attrs: {block: true}}, function (node) {
             var classSet = {
                     block: '',
