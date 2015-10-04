@@ -1,6 +1,6 @@
 {
   "name": "posthtml-bem",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PostHTML-plugin for creating BEM-named class structure",
   "main": "index.js",
   "scripts": {

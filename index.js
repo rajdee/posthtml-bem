@@ -70,6 +70,8 @@ module.exports = function (config) {
         if ('mod' in attributes) {
             classSet.mods = attributes.mod;
             delete node.attrs.mod;
+        } else {
+            classSet.mods = '';
         }
 
         classes = _createClassList(classSet);
@@ -97,8 +99,8 @@ module.exports = function (config) {
             
             if (node.content && Array.isArray(node.content)) {
                 node.content.forEach(function (children) {
-                    if (children.attrs.elem) {
-                      elem = _assignClassList('elem', block, children.attrs, children);
+                    if (children.tag && children.attrs.elem) {
+                        elem = _assignClassList('elem', block, children.attrs, children);
                     }
                 });
             }
