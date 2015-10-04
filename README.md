@@ -84,6 +84,27 @@ posthtml()
     });
 ```
 
+## With Gulp
+
+```javascript
+var gulp = require('gulp'),
+    rename = require('gulp-rename'),
+    posthtml = require('gulp-posthtml');
+
+gulp.task('default', function () {
+    return gulp.src('before.html')
+        .pipe(posthtml([
+            require('posthtml-bem')({
+                elemPrefix: '__',
+                modPrefix: '_',
+                modDlmtr: '--'
+            })
+        ]))
+    .pipe(rename('after.html'))
+    .pipe(gulp.dest('.'));
+});
+```
+
 ## License
 
 MIT
