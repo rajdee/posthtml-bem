@@ -8,6 +8,61 @@
 $ npm install --save-dev posthtml-bem
 ```
 
+
+##Features
+
+### Blocks
+
+```html
+<div block="MadTeaParty">
+    Mad Tea Party
+</div>
+```
+
+This would render like
+
+```html
+<div class="MadTeaParty">
+    Mad Tea Party
+</div>
+```
+
+
+### Elements
+
+```html
+<div block="MadTeaParty">
+    <div elem="march-hare">March Hare</div>
+</div>
+```
+
+This would render like
+
+```html
+<div class="MadTeaParty">
+    <div class="MadTeaParty__march-hare">March Hare</div>
+</div>
+```
+
+### Modifiers
+
+```html
+<div block="MadTeaParty">
+    <div elem="march-hare" mod="type:mad">March Hare</div>
+</div>
+```
+
+This would render like
+
+```html
+<div class="MadTeaParty">
+    <div class="MadTeaParty__march-hare MadTeaParty__march-hare_type_mad">
+        March Hare
+    </div>
+</div>
+```
+
+
 ## Usage
 
 ```javascript
@@ -30,5 +85,3 @@ posthtml()
 ## License
 
 MIT
-    
-    
