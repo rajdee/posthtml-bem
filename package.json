@@ -1,0 +1,27 @@
+{
+  "name": "posthtml-bem",
+  "version": "0.1.0",
+  "description": "PostHTML-plugin for creating BEM-named class structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajdee/posthtml-bem.git"
+  },
+  "keywords": [
+    "bem",
+    "posthtml",
+    "beman"
+  ],
+  "author": "Ruslan Abdullaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajdee/posthtml-bem/issues"
+  },
+  "homepage": "https://github.com/rajdee/posthtml-bem#readme",
+  "devDependencies": {
+    "posthtml": "^0.4.1"
+  }
+}

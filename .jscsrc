@@ -1,0 +1,4 @@
+{
+    "preset": "yandex",
+    "disallowMultipleVarDecl": false
+}
