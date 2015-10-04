@@ -13,6 +13,7 @@
   "keywords": [
     "bem",
     "posthtml",
+    "posthtml-plugin",
     "beman"
   ],
   "author": "Ruslan Abdullaev",
