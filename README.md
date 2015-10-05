@@ -108,8 +108,38 @@ gulp.task('default', function () {
     .pipe(gulp.dest('.'));
 });
 ```
+## With Jade and Gulp
 
+jade template
+```html
+div(block='animals')
+    div(elem='rabbit' mod='type:scurrying, color:white')
+    div(elem='dormouse' mod='type:sleeper, color:red')
+```
 
+guplfile.js
+```javascript
+var gulp = require('gulp'),
+    jade = require('gulp-jade'),
+    rename = require('gulp-rename'),
+    posthtml = require('gulp-posthtml');
+    
+gulp.task('default', function () {
+    return gulp.src('before.jade')
+        .pipe(jade({
+            pretty: true
+        }))
+        .pipe(posthtml([
+            require('posthtml-bem')({
+                elemPrefix: '__',
+                modPrefix: '_',
+                modDlmtr: '--'
+            })
+        ]))
+        .pipe(rename('after.html'))
+        .pipe(gulp.dest('.'));
+});
+```
 ## Predecessors
 
 This plugin was inspired by the syntax and the idea of using custom attributes from [BEML](https://github.com/zenwalker/node-beml) and [bemto](https://github.com/kizu/bemto).
