@@ -109,6 +109,12 @@ gulp.task('default', function () {
 });
 ```
 
+
+## Predecessors
+
+This plugin was inspired by the syntax and the idea of using custom attributes from [BEML](https://github.com/zenwalker/node-beml) and [bemto](https://github.com/kizu/bemto).
+
+
 ## License
 
 MIT
