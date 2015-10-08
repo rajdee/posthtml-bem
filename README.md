@@ -48,7 +48,7 @@ This would render like
 
 ### Modifiers
 
-_** Attention: ** Please use "mods" for the attribute modifiers instead of "mod" and a space as a separator of modifiers instead of a comma.
+_**Attention:** Please use "mods" for the attribute modifiers instead of "mod" and a space as a separator of modifiers instead of a comma._
 
 ```html
 <div block="MadTeaParty">
@@ -57,19 +57,6 @@ _** Attention: ** Please use "mods" for the attribute modifiers instead of "mod"
 </div>
 ```
 
-
-This would render like
-
-```html
-<div class="MadTeaParty">
-    <div class="MadTeaParty__march-hare MadTeaParty__march-hare_type_mad">
-        March Hare
-    </div>
-    <div class="MadTeaParty__march-hare MadTeaParty__march-hare_mad">
-        March Hare
-    </div>
-</div>
-```
 
 This would render like
 
