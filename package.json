@@ -14,7 +14,8 @@
     "bem",
     "posthtml",
     "posthtml-plugin",
-    "beman"
+    "beman",
+    "beml"
   ],
   "author": {
     "name": "Ruslan Abdullaev"
@@ -28,5 +29,8 @@
     "chai": "^3.3.0",
     "mocha": "^2.3.3",
     "posthtml": "^0.4.1"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.6"
   }
 }
