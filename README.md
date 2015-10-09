@@ -1,4 +1,5 @@
 # PostHTML-bem
+[![npm version](https://badge.fury.io/js/posthtml-bem.svg)](http://badge.fury.io/js/posthtml-bem)
 
 [PostHTML](https://github.com/posthtml/posthtml) plugin for support to simplify the maintenance of [BEM](http://bem.info) naming structure in html
 
