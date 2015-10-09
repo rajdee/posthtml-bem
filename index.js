@@ -133,7 +133,6 @@ module.exports = function (config) {
                         children.attrs.block = nodeAttrs.block;
                     }
                 });
-                return node;
             }
             return node;
         });
