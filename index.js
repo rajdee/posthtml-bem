@@ -116,9 +116,11 @@ module.exports = function (config) {
         classes = _createClassList(classSet);
 
         if (classes) {
-            node.attrs.class = classes;
+            node.attrs.class = node.attrs.class ?
+                [classes, node.attrs.class].join(' ') :
+                classes;
             return classSet;
-        };
+        }
     };
 
     return function posthtmlBem(tree) {

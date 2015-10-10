@@ -150,8 +150,18 @@ describe('Test for mixes', function() {
 describe('Services test', function() {
     it('Test for trimming whitespaces', function(done) {
         test(
-            '<div block="animal"  mix="block: elephant"><div elem="nose" mods="size:  long">Nose</div></div>',
+            '<div block="animal" mix="block: elephant"><div elem="nose" mods="size:  long">Nose</div></div>',
             '<div class="animal elephant"><div class="animal__nose animal__nose_size_long">Nose</div></div>',
+            done
+        );
+    });
+});
+
+describe('Classes test', function() {
+    it('Extend classes', function(done) {
+        test(
+            '<div block="animal" mix="block: elephant" class="clearfix grid"><div elem="nose" mods="size:  long" class="clearfix grid">Nose</div></div>',
+            '<div class="animal elephant clearfix grid"><div class="animal__nose animal__nose_size_long clearfix grid">Nose</div></div>',
             done
         );
     });
