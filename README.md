@@ -90,6 +90,40 @@ This would render like
 </div>
 ```
 
+You can use several mixes separated by a comma.
+
+```html
+<div block="animal" mix="block:elephant elem:trunk mods:[size:short broken], block:cow mods:[moo]">
+    <div elem="nose" mods="size:long">Nose</div>
+</div>
+```
+
+This would render like
+
+```html
+<div class="animal elephant__trunk elephant__trunk_size_short elephant__trunk_broken cow cow_moo">
+    <div class="animal__nose animal__nose_size_long">Nose</div>
+</div>
+```
+
+### Native class support
+
+Native classes are supplemented by BEM classes
+
+```html
+<div block="animal" mix="block: elephant" class="clearfix grid">
+    <div elem="nose" mods="size:  long" class="clearfix grid">Nose</div>
+</div>
+```
+
+This would render like
+
+```html
+<div class="animal elephant clearfix grid">
+    <div class="animal__nose animal__nose_size_long clearfix grid">Nose</div>
+</div>
+```
+
 
 
 ## Usage

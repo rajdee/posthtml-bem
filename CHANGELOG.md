@@ -1,3 +1,16 @@
+<a name"0.2.1"></a>
+### 0.2.1 (2015-10-10)
+
+
+#### Features
+
+* **parser:***
+  * native classes are supplemented by BEM classes
+* **docs:***
+  * added some examples of usage
+* added tests for new features
+
+
 <a name"0.2.0"></a>
 ### 0.2.0 (2015-10-10)
 
