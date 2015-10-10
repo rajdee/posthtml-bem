@@ -1,3 +1,16 @@
+<a name"0.2.0"></a>
+### 0.2.0 (2015-10-10)
+
+
+#### Features
+
+* **parser:***
+  * added support for multiple mixtures - you can use several mixes separated by a comma
+* **docs:***
+  * added some examples of usage
+* added tests for new features
+  
+
 <a name"0.1.2"></a>
 ### 0.1.2 (2015-10-08)
 
@@ -12,7 +25,7 @@
 * **parser:***
   * changed attribute modifiers with 'mod' to 'mods'
   * separator modifiers changed from ',' to ' '(space)
-  * added mixes support - you can mix block, element or modifiers
+  * added support for mixes - you can mix block, element or modifiers
 * **docs:***
   * added some examples of usage
 * added tests  

@@ -145,6 +145,14 @@ describe('Test for mixes', function() {
         );
     });
 
+    it('Test multiple mix on block', function(done) {
+        test(
+            '<div block="animal" mix="block:elephant elem:trunk mods:[size:short color:brown], block:cow mods:[moow]"><div elem="nose" mods="size:long">Nose</div></div>',
+            '<div class="animal elephant__trunk elephant__trunk_size_short elephant__trunk_color_brown cow cow_moow"><div class="animal__nose animal__nose_size_long">Nose</div></div>',
+            done
+        );
+    });
+
 });
 
 describe('Services test', function() {
@@ -156,6 +164,3 @@ describe('Services test', function() {
         );
     });
 });
-
-
-

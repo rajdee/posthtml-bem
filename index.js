@@ -16,7 +16,6 @@ module.exports = function (config) {
             modDlmtr: '_'
         };
 
-
     _createBlockClass = function (block) {
         return block;
     };
@@ -45,30 +44,34 @@ module.exports = function (config) {
             elem,
             mods,
             mixes,
-            blockRegExp = /block\:([\S]*)\b/g,
-            elemRegExp = /elem\:([\S]*)\b/g,
-            modRegExp = /mods\:\[(.*)\]/g;
+            blockRegExp = /block\:([\S]*)\b/,
+            elemRegExp = /elem\:([\S]*)\b/,
+            modRegExp = /mods\:\[(.*)\]/;
 
         mixes = mix
                 .replace(/\s{2,}/g, ' ') // remove more than one whitespace
-                .replace(/\:\s/g, ':'); // remove whitespace after the semicolon
+                .replace(/\:\s/g, ':') // remove whitespace after the semicolon
+                .replace(/\,\s/g, ',') // remove whitespace after the comma
+                .split(',');
 
-            block = blockRegExp.exec(mixes) || [];
-            elem = elemRegExp.exec(mixes) || [];
-            mods = modRegExp.exec(mixes) || [];
+        mixes.forEach(function (mix) {
+            block = blockRegExp.exec(mix) || [];
+            elem = elemRegExp.exec(mix) || [];
+            mods = modRegExp.exec(mix) || [];
 
             if (!block) {
-                gutil.log("Please add block attribute to a mix definition: ", mixes);
+                gutil.log('Please add block attribute to a mix definition: ', mixes);
             }
 
-            mixClass = _createClassList({
+            mixClass += ' ' +  _createClassList({
                 block: block[1],
                 elem: elem[1],
                 mods: mods[1],
                 mix: ''
             });
+        });
 
-            return ' ' + mixClass;
+        return mixClass;
     };
 
     _createClassList = function (selector) {
