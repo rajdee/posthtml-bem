@@ -134,7 +134,7 @@ module.exports = function (config) {
 
             if (node.content && Array.isArray(node.content)) {
                 node.content.forEach(function (children) {
-                    if (children.tag && children.attrs.elem && !children.attrs.block) {
+                    if (children.tag && children.attrs && children.attrs.elem && !children.attrs.block) {
                         children.attrs.block = nodeAttrs.block;
                     }
                 });
