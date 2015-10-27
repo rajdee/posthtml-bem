@@ -2,7 +2,7 @@ module.exports = function (config) {
     'use strict';
     var gutil = require('gulp-util');
 
-    let _createBlockClass,
+    var _createBlockClass,
         _createElemClass,
         _createModClass,
         _createMixClass,
@@ -39,7 +39,7 @@ module.exports = function (config) {
     };
 
     _createMixClass = function (baseClass, mix) {
-        let mixClass = '',
+        var mixClass = '',
             block,
             elem,
             mods,
