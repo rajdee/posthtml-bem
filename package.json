@@ -1,10 +1,10 @@
 {
   "name": "posthtml-bem",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "PostHTML-plugin for creating BEM-named class structure",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha -w"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
