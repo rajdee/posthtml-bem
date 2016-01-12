@@ -4,7 +4,6 @@
 
 [PostHTML](https://github.com/posthtml/posthtml) plugin for support to simplify the maintenance of [BEM](http://bem.info) naming structure in html
 
-> Translate [beman](https://github.com/rajdee/beman) templates based on BEM named class structure
 
 ## Install
 
