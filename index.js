@@ -1,6 +1,6 @@
 module.exports = function (config) {
     'use strict';
-    var gutil = require('gulp-util');
+    var logger = require('fancy-log');
 
     var _createBlockClass,
         _createElemClass,
@@ -60,7 +60,7 @@ module.exports = function (config) {
             mods = modRegExp.exec(mix) || [];
 
             if (!block) {
-                gutil.log('Please add block attribute to a mix definition: ', mixes);
+                logger.log('Please add block attribute to a mix definition: ', mixes);
             }
 
             mixClass += ' ' +  _createClassList({
