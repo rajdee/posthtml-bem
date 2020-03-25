@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/rajdee/posthtml-bem#readme",
   "devDependencies": {
-    "chai": "^3.3.0",
-    "mocha": "^2.3.3",
-    "posthtml": "^0.4.1"
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "posthtml": "^0.12.0"
   },
   "dependencies": {
-    "gulp-util": "^3.0.6"
+    "fancy-log": "^1.3.3"
   }
 }
